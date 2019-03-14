@@ -17,6 +17,6 @@ app.get('/', (req,res)=>{
 
 console.log(PORT)
 app.listen(PORT,()=>{
-	console.log(`server listening on ${ipv4}:${PORT}`);
+	console.log(`server listening on :${PORT}`);
 });
 
