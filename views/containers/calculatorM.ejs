@@ -38,7 +38,7 @@
         <% cheeses.forEach(function(item){ %>
         <div id="chees" onclick="{
             $('#prot').val('<%= item.prot%>');
-            $('#c_list > *').css({'background-color':'white'});
+            $('#c_list > *').css({'background-color':'white','color':'black'});
             $(this).css({'background-color':'green', 'color':'white'});
     }">
             <div id="cheese" onclick="{}">&#10070; <%= item.name %></div>
