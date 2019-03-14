@@ -1,10 +1,6 @@
 
 $(()=>{
-
-    let cheese_clicked = false;
-    let cheese_item;
-    $('#cheese').click(()=>{
-    });
+    
     $('#cream_p').val(45);
     $('#cream_p').prop('disabled', true);
     $('#reverse_p').val(0.1);
