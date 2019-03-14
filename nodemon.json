@@ -1,0 +1,10 @@
+{
+    "ignore": ["node_modules"],
+    "env": {
+        "NODE_ENV": "development",
+        "PORT": 3000,
+        "PASSWORD": "x6&+YRA+K&jCeJYA_yQjKvctmj9P3!pr5-HLEFH#!4-!#*M5RY9u5P?d_pQ#93hB^dGa6H%9-Ra5_EyrdrpKbn@bCJR_m#!7WqjhzN6+U!YPUBwp&P5kaL7fsk!nMZ&N%Qwac*jz%#aX2YjMJ=t%Uj2xCh2wUxEC-=cFE$!?x$xC2=U!ZQkj6j*=FmqdV6*=?MMF_dzD#VSBK_wSnwAWJN!5vNm2REvs=KbBZy#yT5s3NMWxK4g29?y!JTDU*?neY_uUW954+wRrS$fmL@^C!dnLtcnBhSkX55CJVW3xD@&&qaT38ZwCvL2=^+t_cap7t_jJKXh7h+daxkL=jx*p=M9%W5-qsg4zQa&qFB*+AXaBeX-5pzJ@^xcdJMkjv_WYf53gS?t2%AtQ%f5$y4yGus*#&=!Tp9^_+HN9AmR-DtEwSCpmtRm*2#PgHAx6uBTghSnk3W7!975_x=?#-MxGcs@7UTKH7cywNf?Rjw7Zc_SyAY7vy97Mu3t5s@VLS##x"
+    },
+    "ext": ".js,.json",
+    "watch": "./"
+}

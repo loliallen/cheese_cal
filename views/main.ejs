@@ -1,0 +1,47 @@
+<html>
+<head>
+	<title>Check Box - Bot</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<style type="text/css">
+		.i_container {
+			display: flex;
+			flex-direction: column;
+			flex-grow: 0;
+			flex-shrink: 0;
+			margin-right: 10px;
+		}
+
+		.con {
+			display: flex;
+			margin-bottom: 10px;
+		}
+
+		.c_list {
+			cursor: pointer;
+		}
+
+		#chees:hover {
+			cursor: pointer;
+		}
+
+		.val_list:hover {
+			cursor: pointer;
+		}
+	</style>
+	<script type="text/javascript">
+		$(() => {
+			$('#c_list').hide();
+		})
+	</script>
+</head>
+
+<body>
+
+	<% include containers/calculationQ.ejs %>
+	<% include containers/calculatorM.ejs %>
+	
+</body>
+<script src="../public/js/main.js"></script>
+<script src="../public/js/calculate.js"></script>
+</html>

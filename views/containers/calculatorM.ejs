@@ -1,0 +1,63 @@
+<div id="calM"style="border: 1px solid black; padding: 5px; ">
+    <h2>Рассчет молока</h2>
+    <input id="protein" placeholder="Белок">
+    <input id="prot" type="text" disabled style="display: inline-flex; width: 40px;">
+    <!-- <ul style="list-style-type: none">
+        <li class="val_list">
+            <div style="display: flex; justify-content: start" onclick="checkRadio1()">
+                <h3><input name="process" type="radio" id="radio1">Рассчеты молока для смеси от молока</h3>
+            </div>
+        </li>
+        <li class="val_list">
+            <div style="display: flex; justify-content: start" onclick="{
+                $('#radio2').prop('checked',true);
+            }">
+                <h3><input name="process" type="radio" id="radio2">Рассчеты молока для смеси от смеси</h3>
+            </div>
+        </li>
+    </ul> -->
+    <div style="display:flex; flex-direction:row; margin-bottom: 10px;">
+        <div
+            style="display:flex; flex-direction:column; border: 1px solid black; padding: 5px; margin-right: 20px;">
+            <br>Молоко<br>
+            <div><br>м.д.ж, %</br> <input type="text" placeholder="%" id="milk_p"></div>
+            <div><br>кг</br> <input type="text" placeholder="кг" id="milk_w"></div>
+        </div>
+        <div
+            style="display:flex; flex-direction:column; border: 1px solid black; padding: 5px; margin-right: 20px;">
+            <br>Смесь<br>
+            <div><br>м.д.ж, %</br> <input type="text" placeholder="%" id="mixture_p"></div>
+            <div><br>кг</br> <input type="text" placeholder="кг" id="mixture_w"></div>
+        </div>
+        <div
+            style="display:flex; flex-direction:column; border: 1px solid black; padding: 5px; margin-right: 20px;">
+            <br>Обрат<br>
+            <div><br>м.д.ж, %</br> <input type="text" placeholder="%" id="reverse_p"></div>
+            <div><br>кг</br> <input type="text" placeholder="кг" id="reverse_w"></div>
+        </div>
+        <div
+            style="display:flex; flex-direction:column; border: 1px solid black; padding: 5px; margin-right: 20px;">
+            <br>Сливки<br>
+            <div><br>м.д.ж, %</br> <input type="text" placeholder="%" id="cream_p"></div>
+            <div><br>кг</br> <input type="text" placeholder="кг" id="cream_w"></div>
+        </div>	
+        <div
+            style="display:flex; flex-direction:column; border: 1px solid black; padding: 5px; margin-right: 20px; justify-content: space-between;">
+            <br>На сепарирование<br>       
+            <input type="text" id="sep" placeholder="На сепарирование">
+        </div>
+    </div>
+    <div>
+        <button id="calculation_2">Рассчитать</button>
+    </div>
+    <h2 class="c_list" style="display:flex; align-items: center">Список сыров <i
+            class="material-icons">arrow_drop_down</i></h2>
+    <div id="c_list">
+        <% cheeses.forEach(function(item){ %>
+        <div id="chees" onclick="{
+            $('#prot').val('<%= item.prot%>');
+        $(this).css({'background-color':'green'});
+    }"><div id="cheese" onclick="{}">&#10070; <%= item.name %></div></div>
+        <%});%>
+</div>
+</div>

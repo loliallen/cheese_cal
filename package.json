@@ -1,0 +1,22 @@
+{
+  "name": "parser",
+  "version": "1.0.0",
+  "description": "parser from xlsx to json",
+  "main": "express-server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon express-server.js"
+  },
+  "author": "loliallen",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "eslint": "^5.15.1",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-node": "^8.0.1",
+    "express": "^4.16.4",
+    "nodemon": "^1.18.10",
+    "xlsx-to-json": "^0.3.0"
+  }
+}
