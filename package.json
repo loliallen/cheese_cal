@@ -18,5 +18,8 @@
     "express": "^4.16.4",
     "nodemon": "^1.18.10",
     "xlsx-to-json": "^0.3.0"
+  },
+  "engines": {
+    "node": ">=9.0.0"
   }
 }
