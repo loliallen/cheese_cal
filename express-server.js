@@ -2,8 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
 const {PORT} = require('./config');
-const {PASSWORD} = require('./config');
-const ipv4 = '10.0.1.71';
+// const ipv4 = '10.0.1.71';
 // console.log(PASSWORD);
 app.set('view engine', 'ejs');
 app.use('/public', express.static('public'));
@@ -16,8 +15,8 @@ app.get('/', (req,res)=>{
 	res.render("main.ejs", {cheeses: cheeses});
 });
 
-
-app.listen(PORT,ipv4,()=>{
+console.log(PORT)
+app.listen(PORT,()=>{
 	console.log(`server listening on ${ipv4}:${PORT}`);
 });
 
